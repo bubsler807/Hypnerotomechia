@@ -1,5 +1,5 @@
 body {
-  background-color: green;
+  background-color: #FFFDD0;
 }
 
 P {
@@ -8,5 +8,5 @@ P {
 
 h1 {
   color: navy;
-  margin-left: 20px;
+  text-align: center
 }
