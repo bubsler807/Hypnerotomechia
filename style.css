@@ -7,6 +7,10 @@ body {
 	font-family: sans-serif ;
 }
 
+ul {
+	text-align: center
+}
+
 P {
   text-align: center
 }
