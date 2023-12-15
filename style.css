@@ -29,9 +29,19 @@ h1 {
 }
 
 h2 {
+	color: maroon;
   text-align: center
+
 }
 
 h2 {
   font-size: 2em
+}
+
+h3 {
+  text-align: center
+}
+
+h3 {
+  font-size: 1.5em
 }
