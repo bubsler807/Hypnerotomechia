@@ -1,7 +1,6 @@
 body {
   background-color: #FFFDD0;
-	text-align: center
-	color:#444
+
   margin: auto ;
 	padding: 0 16px ;
 	margin-bottom: 500px ;
@@ -14,6 +13,12 @@ body {
 ul {
 	text-align: center
 }
+
+P {
+		text-align: center
+	color:#444
+	}
+	
 
 P {
   font-size: 1em
