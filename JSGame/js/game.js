@@ -40,6 +40,8 @@ function draw(){
 	    player.draw()
 
 	    drawText("Level:"+level, 30, false, 40, "white");
+	    drawText("Gold:"+gold, 30, false, 80, "gold");
+	    drawText("Potions:", 30, false, 120, "red");
 	}
 }
 
@@ -69,17 +71,21 @@ function showTitle(){
     ctx.fillRect(0,0,canvas.width, canvas.height);
 
     gameState = "title";
+
+    drawText("Bub's", 40, true, canvas.height/2 - 110, "white");
+    drawText("Dungeon", 70, true, canvas.height /2 - 50, "white");
 }
 
 function startGame(){                                           
     level = 1;
+    gold = 0;
     startLevel(startingHp);
 
     gameState = "running";
 }
 
 function startLevel(playerHp){
-	spawnRate = 12;
+	spawnRate = 10;
 	spawnCounter = spawnRate;
 
 

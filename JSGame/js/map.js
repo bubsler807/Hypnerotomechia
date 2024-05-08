@@ -4,6 +4,14 @@ function generateLevel(){
     });
 
     generateMonsters();
+
+    for(let i=0;i<3;i++){
+    	randomPassableTile().treasure = true;
+    }
+
+    for(let i=0;i<1;i++){
+    	randomPassableTile().apple = true;
+    }
 }
 
 function generateTiles(){
@@ -56,7 +64,7 @@ function generateMonsters(){
 }
 
 function spawnMonster(){
-    let monsterType = shuffle([RedSlime, BlueSlime, Alien, HammerHead])[0];
+    let monsterType = shuffle([RedSlime, BlueSlime, PurpleSlime, Alien, HammerHead])[0];
     let monster = new monsterType(randomPassableTile());
     monsters.push(monster);
 }

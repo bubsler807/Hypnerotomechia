@@ -50,6 +50,13 @@ class Tile{
 
 	draw(){
 		drawSprite(this.sprite, this.x, this.y);
+
+		if(this.treasure){
+			drawSprite(13, this.x, this.y)
+		}
+		if (this.apple){
+			drawSprite(14,this.x, this.y)
+		}
 	}
 }
 
@@ -59,7 +66,16 @@ class Floor extends Tile{
     };
 
     stepOn(monster){
-    	//TODO: complete
+    	if(monster.isPlayer && this.treasure){
+    		gold++;
+    		this.treasure = false;
+    		spawnMonster();
+    	}
+    	if(monster.isPlayer && this.apple){
+    		player.hp++;
+    		this.apple = false;
+    		spawnMonster();
+    	}
     }
 }
 

@@ -120,6 +120,12 @@ class BlueSlime extends Monster{
 	}
 }
 
+class PurpleSlime extends Monster{
+	constructor(tile){
+		super(tile, 8, 3)
+	}
+}
+
 class Alien extends Monster{
 	constructor(tile){
 		super(tile, 6, 3)
