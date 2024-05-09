@@ -67,7 +67,7 @@ class Floor extends Tile{
 
     stepOn(monster){
     	if(monster.isPlayer && this.treasure){
-    		gold++;
+    		gold += 5;
     		this.treasure = false;
     		spawnMonster();
     	}

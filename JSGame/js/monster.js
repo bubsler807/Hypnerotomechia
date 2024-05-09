@@ -80,6 +80,7 @@ class Monster{
 		this.dead = true;
 		this.tile.monster = null
 		this.sprite = 1;
+		gold++;
 	}
 
 	move(tile){

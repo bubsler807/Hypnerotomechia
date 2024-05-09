@@ -3,13 +3,14 @@
 
 <style>
 	canvas{
-		outline: 1px solid white;
+		outline: 3px solid gray;
 	}
 
 	body{
-		background-color: slategray;
+		background-color: black;
 		text-align: center;
 		margin-top: 50px;
+		color: white;
 	}
 </style>
 <canvas></canvas>
@@ -45,6 +46,8 @@
 	        if(e.key=="s") player.tryMove(0, 1);
 	        if(e.key=="a") player.tryMove(-1, 0);
 	        if(e.key=="d") player.tryMove(1, 0);
+	        if(e.key=="q") spells.WOOP();
+	        if(e.key=="e") spells.HEAL();
 		}
 	};
 
@@ -53,3 +56,5 @@
 
 	setupCanvas(Image);
 </script>
+
+<p>Controls: WASD, Q to sacrifice all hearts but 1 in exchange for being teleported to a random location, E to heal for 20 gold.</p>

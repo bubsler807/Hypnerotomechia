@@ -39,9 +39,9 @@ function draw(){
 
 	    player.draw()
 
-	    drawText("Level:"+level, 30, false, 40, "white");
+	    drawText("Level:"+level+"/8", 30, false, 40, "white");
 	    drawText("Gold:"+gold, 30, false, 80, "gold");
-	    drawText("Potions:", 30, false, 120, "red");
+	    drawText("Health:"+player.hp, 30, false, 120, "red")
 	}
 }
 
@@ -79,6 +79,7 @@ function showTitle(){
 function startGame(){                                           
     level = 1;
     gold = 0;
+    numSpells = 1;
     startLevel(startingHp);
 
     gameState = "running";
